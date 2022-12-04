@@ -1,14 +1,17 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url('images/body_background.png');
+    background-color: black;
+
     background-repeat: repeat-y;
     background-size: cover;
     background-attachment: fixed;
+    font-family: "Gill Sans", sans-serif;
 }
 
 /* header section */
 #header{
+    height: 12%;
     position: fixed;
     width: 100%;
     padding: 5px 0px;
@@ -20,12 +23,15 @@ body{
 }
 #logo{
     margin: 0px 20px;
-    width: 254px;
-    height: 60px;
+    width: 100px;
+    border-radius: 4px;
+    height: 10px;
 }
 #logo img{
-    width: 100%;
-    height: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 50px;
+    height: 40px;
     min-width: 150px;
     cursor: pointer;
 }
@@ -37,7 +43,7 @@ body{
     display: none;
 }
 #back-to-home i{
-    color: grey;
+    color: white;
     font-size: 1.5rem;
     
 }
@@ -53,7 +59,8 @@ body{
 .wrapper{
     /* max-width: 1000px;
     width: 40vw; */
-    width: 100%;
+    margin-left:40px;
+    width: 80%;
     padding: 10px;
     border-radius: 10px;
     padding: 5px 15px;
@@ -69,8 +76,8 @@ body{
 }
 
 #search-area input{
-    width: 100%;
-    font-size: 1.2rem;
+    width: 80%;
+    font-size: 1rem;
     border: none;
 }
 #search-area input:focus {
@@ -79,8 +86,11 @@ body{
 #search-area button{
     background: none;
     border: none;
-    color: black;
+    color: white;
     font-size: 1rem;
+}
+#best-of-year{
+    border:2px solid white;
 }
 /* display area of the suggestion box */
 .results{
@@ -123,7 +133,7 @@ body{
     border: none;
     color: white;
     background: none;
-    font-size: 1rem;
+    font-size: 0.7rem;
     cursor: pointer;
     padding: 0px 20px;
 }
@@ -131,7 +141,12 @@ body{
     background: none;
     color: white;
     border: none;
-    font-size: 1rem;
+    border:1px solid white;
+    border-radius: 6px;;
+    font-size: 0.7rem;
+}
+#best-of-year option{
+    font-size:2px;
 }
 #extra-buttons button:hover, #extra-buttons select:hover{
     color: #db393c;
@@ -140,20 +155,25 @@ body{
 #extra-buttons select option{
     color: white;
     background: black;
-    font-size: 1rem;
+    font-size: 0.5rem;
+}
+#my-list{
+    width:fit-content;
 }
 #my-list a{
     text-decoration: none;
     color: inherit;
+    width:fit-content;
+    font-size: 12px;
+    
 }
 
 /* page heading styling */
 #page-heading{
     padding-top: 60px;
     color: white;
-    font-size: 5rem;
+    font-size: 2rem;
     text-align: center;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-weight: 100;
 }
 
@@ -167,11 +187,11 @@ body{
     
 }
 .movie-element{
-    margin: 20px;
+    margin: 6px;
 }
 .movie-poster{
-    height: 265px;
-    width: 170px;
+    height: 200px;
+    width: 150px;
 }
 .movie-poster :hover{
     transform: scale(1.1);
@@ -182,11 +202,12 @@ body{
     transition: all .2s ease-in;
 }
 .movie-title{
-    max-width: 165px;
+    max-width: 140px;
     margin: 5px;
+    color:white;
     text-align: center;
-    color: white;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
+    
     font-family: monospace;
 }
 .movie-element-tags{
@@ -196,7 +217,9 @@ body{
 }
 .movie-rating, .add-movie-to-list{
     color: white;
-    font-size: 1.2rem;
+    
+
+    font-size: 0.7rem;
 }
 .movie-rating i{
     color: gold;
@@ -244,8 +267,8 @@ body{
 /* responsiveness and media queries */
 @media screen and (max-width:950px) {
     #logo{
-        width: 200px;
-        height: auto;
+        width: 100px;
+        height: 100px;
     }
 }
 

@@ -1,7 +1,9 @@
 body{
     padding: 0px;
     margin: 0px;
-    background-image: url('images/body_background.png');
+    font-family: "Gill Sans", sans-serif;
+
+    background-color: black;
 }
 #heading{
     display: flex;
@@ -109,12 +111,15 @@ body{
         padding-bottom: 5px;
     }
     #heading{
-        font-size: 4rem;
+        font-size: 1rem;
         padding:  20px 30px;
     }
     #btns{
         padding-right: 30px;
     }
+}
+#my-list {
+    height:10px;
 }
 @media screen and (max-width: 400px) {
     .list-item{

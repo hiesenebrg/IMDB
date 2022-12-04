@@ -16,7 +16,7 @@ const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 // fetching all the dom elements
 var movieContainer = document.getElementById('movie-container');
 // var rRatedMoviesBtn = document.getElementById('top-r-rated');
-var kidsMoviesBtn = document.getElementById('top-kids-rated');
+var topvotemovies = document.getElementById('top-voted-movies');
 var webLogo = document.getElementById('logo');
 var bestMoviesOfYearDropDownMenu = document.getElementById('best-of-year');
 var pageHeading = document.getElementById('page-heading');
@@ -107,8 +107,8 @@ function createMovieElement(movie){
     
 // });
 
-kidsMoviesBtn.addEventListener('click', function(){
-    pageHeading.innerHTML = 'Popular In Kids';
+topvotemovies.addEventListener('click', function(){
+    pageHeading.innerHTML = 'Top Voted Movies';
     apiRequestCall(TMDB_BASE_URL+TMDB_POPULAR_KIDS_MOVIES+TMDB_API_KEY);
 });
 
